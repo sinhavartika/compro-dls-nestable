@@ -4,6 +4,9 @@ Compro DLS Hierarchical List
 This is a hierarchical dragable list, to be used in compro DLS. 
 This component has made minor modifications in [Nestable by dbushell](http://dbushell.github.io/Nestable/).
 
+<strong> [DEMO](http://sinhavartika.github.io/compro-dls-nestable/) </strong> 
+
+
 <strong>Features supported in this component:</strong>
 
 1. Two types of Nodes: Section & Leaf

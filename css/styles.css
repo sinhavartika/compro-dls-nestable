@@ -272,9 +272,6 @@ p {
     color: #999;
     float: right;
 }
-.dd-item.dd-nodrop > .dd-handle{
-    background-color: #fffdd8;
-}
 
 .builder-hierarchical-list{
     background-color: white;

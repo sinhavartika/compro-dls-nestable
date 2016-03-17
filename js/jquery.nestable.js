@@ -243,9 +243,11 @@
                 li.prepend($(this.options.collapseBtnHTML));
                 li.addClass(this.options.parentNodeClass);
                 li.removeClass(this.options.leafNodeClass);
+                li.removeClass(this.options.noDropClass);
             }else{
                 li.addClass(this.options.leafNodeClass);
                 li.removeClass(this.options.parentNodeClass);
+                li.addClass(this.options.noDropClass);
             }
             li.children('[data-action="expand"]').hide();
         },
@@ -257,6 +259,7 @@
             li.children(this.options.listNodeName).remove();
             li.removeClass(this.options.parentNodeClass);
             li.addClass(this.options.leafNodeClass);
+            li.addClass(this.options.noDropClass);
         },
 
         dragStart: function(e)
@@ -434,7 +437,7 @@
             /**
              * move vertical
              */
-            if (!mouse.dirAx || isNewRoot || isEmpty ) {
+            if (!mouse.dirAx || isNewRoot || isEmpty) {
                 // check if groups match if dragging over new root
                 if (isNewRoot && opt.group !== pointElRoot.data('nestable-group')) {
                     return;
@@ -452,18 +455,12 @@
                     list.append(this.placeEl);
                     this.pointEl.replaceWith(list);
                 }
-                isVerticalMoving1 = this.pointEl.hasClass(opt.noDropClass);
-                isVerticalMoving2 =  this.pointEl.parent().parent().hasClass(opt.noDropClass);
-                if(isVerticalMoving1 || isVerticalMoving2){
-                    return;
-                }
                 else if (before) {
                     this.pointEl.before(this.placeEl);
                 }
                 else {
                     this.pointEl.after(this.placeEl);
                 }
-                
                 if (!parent.children().length) {
                     this.unsetParent(parent.parent());
                 }

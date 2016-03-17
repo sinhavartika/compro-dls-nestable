@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Nestable</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Builder Hierarchical List</h1>
+    <p>Drag &amp; drop hierarchical list with mouse and touch compatibility (jQuery plugin)</p>
+    <menu id="nestable-menu">
+        <button type="button" data-action="expand-all">Expand All</button>
+        <button type="button" data-action="collapse-all">Collapse All</button>
+    </menu>
+
+    <div class="cf nestable-lists">
+
+        <div class="dd builder-hierarchical-list" id="nestable">
+            <ol class="dd-list list-group">
+                <li class="dd-item list-group-item dd-nodrop" data-id="1">
+                    <div class="dd-handle">Module 0 - Course Intro and Pretest</div>
+                    <ol class="dd-list">
+                        <li class="dd-item list-group-item" data-id="2">
+                            <div class="dd-handle">V1: Intro To The Course</div>
+                        </li>
+                        <li class="dd-item list-group-item" data-id="3">
+                            <div class="dd-handle">Q1: Eiffel Tower</div>
+                        </li>
+                        <li class="dd-item list-group-item" data-id="4">
+                            <div class="dd-handle">Q2: Bank Balance</div>
+                        </li>
+                        <li class="dd-item list-group-item" data-id="5">
+                            <div class="dd-handle">Q3: Never-ending Loop</div>
+                        </li>
+                        <li class="dd-item list-group-item" data-id="6">
+                            <div class="dd-handle">Q4: Nested For Loops</div>
+                        </li>                                
+                        <li class="dd-item list-group-item" data-id="7">
+                            <div class="dd-handle">V2: Intro to Variables</div>
+                        </li>
+                        <li class="dd-item list-group-item" data-id="8">
+                            <div class="dd-handle">V3: Practicing Variables</div>
+                        </li>
+                        <li class="dd-item list-group-item" data-id="9">
+                            <div class="dd-handle">V4: If statement</div>
+                        </li>
+                        <li class="dd-item list-group-item" data-id="10">
+                            <div class="dd-handle">V5: Practicing If statements</div>
+                        </li> 
+                        <li class="dd-item list-group-item" data-id="11"><div class="dd-handle">T1: If statement syntax and examples</div></li>
+                        <li class="dd-item list-group-item" data-id="12"><div class="dd-handle">T2: For and While Loops</div></li>
+                        <li class="dd-item list-group-item" data-id="13"><div class="dd-handle">V6:  Loops in Action</div></li>
+                        <li class="dd-item list-group-item dd-nodrop" data-id="14">
+                            <div class="dd-handle">Section - Audio</div>
+                            <ol class="dd-list">
+                                <li class="dd-item list-group-item" data-id="15">
+                                    <div class="dd-handle">Dummy Audio</div>
+                                </li>
+                            </ol>
+                        </li>   
+                    </ol>
+                </li>
+                <li class="dd-item list-group-item" data-id="16">
+                    <div class="dd-handle">Module 1 - Defining and Using Functions</div>
+                    <ol class="dd-list list-group">
+                        <li class="dd-item list-group-item" data-id="18"><div class="dd-handle">V7: Lesson Intro</div></li>                    
+                        <li class="dd-item list-group-item" data-id="28"><div class="dd-handle">T3: Installing Python on Windows</div></li>
+                        <li class="dd-item list-group-item" data-id="19"><div class="dd-handle">V8: Running Python For The First Time on Windows</div></li>
+                        <li class="dd-item list-group-item" data-id="20"><div class="dd-handle">V9: Installing and Running Python on a Mac</div></li>
+                        <li class="dd-item list-group-item" data-id="29"><div class="dd-handle">T4: Check Your Python Version</div></li>
+                        <li class="dd-item list-group-item" data-id="30"><div class="dd-handle">T5: Change IDLE Preferences</div></li>
+                        <li class="dd-item list-group-item" data-id="30"><div class="dd-handle">T6: Fun with Python; Import Statements</div></li>
+                        <li class="dd-item list-group-item" data-id="31"><div class="dd-handle">T7: Drawing Turtles</div></li>
+                        <li class="dd-item list-group-item" data-id="32"><div class="dd-handle">T8: Drawing Some More Turtles</div></li>
+                        <li class="dd-item list-group-item" data-id="21"><div class="dd-handle">V10: Thinking About The Code We Have Written</div></li>
+                        <li class="dd-item list-group-item" data-id="25"><div class="dd-handle">Q5: Reflecting On Functions</div></li>
+                        <li class="dd-item list-group-item" data-id="26"><div class="dd-handle">Q6: What Questions Do You Have</div></li>
+                        <li class="dd-item list-group-item" data-id="26"><div class="dd-handle">Q7: Improve the Code for Squares</div></li>
+                        <li class="dd-item list-group-item" data-id="21"><div class="dd-handle">V11: Creating Our Own Functions</div></li>
+                        <li class="dd-item list-group-item" data-id="27"><div class="dd-handle">Q8: Why do we need functions?</div></li>                        
+                        <li class="dd-item list-group-item" data-id="33"><div class="dd-handle">T9: Functions Can Return Things</div></li>
+                        <li class="dd-item list-group-item" data-id="22"><div class="dd-handle">V12: Writing a Factorial Function</div></li>
+                        <li class="dd-item list-group-item" data-id="23"><div class="dd-handle">V13: Behind the Scenes</div></li>                       
+                    </ol>
+                </li>
+                <li class="dd-item list-group-item" data-id="33">
+                    <div class="dd-handle">Module 2 - An Introduction to Classes</div>
+                    <ol class="dd-list list-group" data-id="34">
+                        <li class="dd-item list-group-item"><div class="dd-handle">[Headshot Video] Intro to the Lesson</div></li>
+                    </ol>
+                </li>
+                <li class="dd-item list-group-item" data-id="35">
+                    <div class="dd-handle">Module 3 - Data Structures</div>
+                    <ol class="dd-list list-group" data-id="36">
+                        <li class="dd-item list-group-item "><div class="dd-handle">[Headshot Video] Intro to the Lesson</div></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <p><strong>Serialised Output (per list)</strong></p>
+    <textarea id="nestable-output"></textarea>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nestable.js"></script>
+    <script src="js/builder-hierarchical-list.js"></script>
+</body>
+</html>
